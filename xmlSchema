@@ -80,6 +80,7 @@
           <xs:element name="numero" type="xs:integer"/>
           <xs:element name="id-avion" type="xs:integer"/>
           <xs:element name="numero-piste" type="xs:integer"/>
+          <xs:element name="id-pilote" type="xs:integer"/>
           <xs:element name="date-depart" type="xs:string"/>
           <xs:element name="date-arrive" type="xs:string"/>
           <xs:element name="heure-depart" type="xs:string"/>
