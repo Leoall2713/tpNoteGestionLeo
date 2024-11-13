@@ -20,9 +20,10 @@
 <!ELEMENT nb-passage(#PCDATA)>
 <!ELEMENT id-compagnie (#PCDATA)>
 <!ELEMENT vols (vol)+>
-<!ELEMENTvol (numero,numero-piste,id-avion,date-depart,date-arrive,heure-depart,heure-arrive,aeroport-arrive)>
+<!ELEMENTvol (numero,numero-piste,id-pilote,id-avion,date-depart,date-arrive,heure-depart,heure-arrive,aeroport-arrive)>
 <!ELEMENT numero (#PCDATA)>
 <!ELEMENT numero-piste (#PCDATA)>
+<!ELEMENT id-pilote(#PCDATA)>
 <!ELEMENT id-avion (#PCDATA)>
 <!ELEMENT numero-piste(#PCDATA)>
 <!ELEMENT date-depart (#PCDATA)>
