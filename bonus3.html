@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture de JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: bisque;
+        }
+
+        table {
+            background-color: blanchedalmond;
+        }
+
+        tbody {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body onload="loadJSON()">
+    <h1>Les vols</h1>
+    <h2>Affichage les modèles des avions des vols</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Numéro de vol</th>
+                <th>Modèle Avion</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        function loadJSON() {
+            fetch('aeroport.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur de chargement du fichier JSON');
+                    }
+
+                    return response.json();
+                })
+                .then(data => {
+                    var tbody = document.getElementsByTagName('tbody')[0];
+                    const vols = data.Bdd[0].Vols;
+                    const avions = data.Bdd[0].Avions;
+                    const rows = vols.map(vol => {
+                        const avion = avions.find(a => a["id_avion"] === vol["id-avion"]);
+
+                        return `
+                            <tr>
+                                <td>${vol["numero"] || ''}</td>
+                                <td>${avion["modele"] || ''}</td>
+                            </tr>
+                        `;
+                    }).join('');
+
+                    tbody.innerHTML = rows;
+                })
+                .catch(error => {
+                    document.getElementsByTagName('tbody').textContent = error;
+                });
+        }
+    </script>
+
+
+</body>
+
+</html>
