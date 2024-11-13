@@ -1,0 +1,83 @@
+{
+    "Bdd": [
+        {
+            "Employes": [
+                {
+                    "id": 1,
+                    "nom": "All",
+                    "prenom": "Le",
+                    "age": 23,
+                    "poste": "Pilote"
+                },
+                {
+                    "id": 2,
+                    "nom": "Gi",
+                    "prenom": "Ra",
+                    "age": 35,
+                    "poste": "Co-pilote"
+                },
+                {
+                    "id": 3,
+                    "nom": "Cam",
+                    "prenom": "Ju",
+                    "age": 41,
+                    "poste": "Stewart"
+                }
+            ],
+            "Pistes": [
+                {
+                    "numero": 1
+                },
+                {
+                    "numero": 2
+                }
+            ],
+            "CompagniesAeriennes": [
+                {
+                    "id": 1,
+                    "nom": "Air Corsica"
+                },
+                {
+                    "id": 2,
+                    "nom": "Air France"
+                }
+            ],
+            "Avions": [
+                {
+                    "id_avion": 1,
+                    "modele": "boeign",
+                    "nb_passage": 700,
+                    "id-compagnie": 2
+                },
+                {
+                    "id_avion": 2,
+                    "modele": "Airbus",
+                    "nb_passage": 500,
+                    "id-compagnie": 1
+                }
+            ],
+            "Vols": [
+                {
+                    "numero": 7345,
+                    "id-avion": 2,
+                    "numero-piste": 2,
+                    "date-depart": "27/04/25",
+                    "date-arrive": "27/04/25",
+                    "heure-depart": "12h56",
+                    "heure-arrive": "13h54",
+                    "aeroport-arrive": "Marignane"
+                },
+                {
+                    "numero": 5782,
+                    "id-avion": 1,
+                    "numero-piste": 2,
+                    "date-depart": "29/04/25",
+                    "date-arrive": "30/04/25",
+                    "heure-depart": "18h56",
+                    "heure-arrive": "10h38",
+                    "aeroport-arrive": "Kuala Lumpur"
+                }
+            ]
+        }
+    ]
+}
