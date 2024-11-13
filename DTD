@@ -1,0 +1,32 @@
+﻿<!ELEMENT bdd (employes,pistes,compagniesAeriennes,avions,vols)+>
+<!ELEMENT employes(employe)+>
+<!ELEMENT employe(id,nom,prenom,age,poste)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT poste (#PCDATA)>
+<!ELEMENT pistes (piste)+>
+<!ELEMENT piste (numero)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT compagniesAeriennes (compagnieAerienne)+>
+<!ELEMENT compagnieAerienne (id,nom)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT avions (avion)+>
+<!ELEMENTavion (id,modele,nb-passage,id-compagnie)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT modèle (#PCDATA)>
+<!ELEMENT nb-passage(#PCDATA)>
+<!ELEMENT id-compagnie (#PCDATA)>
+<!ELEMENT vols (vol)+>
+<!ELEMENTvol (numero,numero-piste,id-avion,date-depart,date-arrive,heure-depart,heure-arrive,aeroport-arrive)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT numero-piste (#PCDATA)>
+<!ELEMENT id-avion (#PCDATA)>
+<!ELEMENT numero-piste(#PCDATA)>
+<!ELEMENT date-depart (#PCDATA)>
+<!ELEMENT date-arrive (#PCDATA)>
+<!ELEMENT heure-depart (#PCDATA)>
+<!ELEMENT heure-arrive (#PCDATA)>
+<!ELEMENT aeroport-arrive (#PCDATA)>
