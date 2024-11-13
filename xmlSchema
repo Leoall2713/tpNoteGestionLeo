@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="bdd">
+     <xs:complexType>
+     <xs:sequence>
+     <xs:element name="employes">
+        <xs:complexType>
+        <xs:sequence>
+       <xs:element name="employe" maxOccurs="unbounded">
+          <xs:complexType>
+          <xs:sequence>
+          <xs:element name="id" type="xs:integer"/>
+          <xs:element name="nom" type="xs:string"/>
+          <xs:element name="prenom" type="xs:string"/>
+          <xs:element name="age" type="xs:integer"/>
+          <xs:element name="poste" type="xs:string"/>
+          
+          </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+     
+     <xs:element name="pistes">
+        <xs:complexType>
+        <xs:sequence>
+       <xs:element name="piste" maxOccurs="unbounded">
+          <xs:complexType>
+          <xs:sequence>
+          <xs:element name="numero" type="xs:integer"/>
+          
+          </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+     
+     <xs:element name="compagniesAeriennes">
+        <xs:complexType>
+        <xs:sequence>
+       <xs:element name="compagnieAerienne" maxOccurs="unbounded">
+          <xs:complexType>
+          <xs:sequence>
+          <xs:element name="id" type="xs:integer"/>
+          <xs:element name="nom" type="xs:string"/>
+          
+          </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+     
+     <xs:element name="avions">
+        <xs:complexType>
+        <xs:sequence>
+       <xs:element name="avion" maxOccurs="unbounded">
+          <xs:complexType>
+          <xs:sequence>
+          <xs:element name="id-avion" type="xs:integer"/>
+          <xs:element name="modele" type="xs:string"/>
+          <xs:element name="nb_passage" type="xs:integer"/>
+          <xs:element name="id_compagnie" type="xs:integer"/>
+          
+          </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+     
+     <xs:element name="vols">
+        <xs:complexType>
+        <xs:sequence>
+       <xs:element name="vol" maxOccurs="unbounded">
+          <xs:complexType>
+          <xs:sequence>
+          <xs:element name="numero" type="xs:integer"/>
+          <xs:element name="id-avion" type="xs:integer"/>
+          <xs:element name="numero-piste" type="xs:integer"/>
+          <xs:element name="date-depart" type="xs:string"/>
+          <xs:element name="date-arrive" type="xs:string"/>
+          <xs:element name="heure-depart" type="xs:string"/>
+          <xs:element name="heure-arrive" type="xs:string"/>
+          <xs:element name="aeroport-arrive" type="xs:string"/>
+          
+          </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+     
+     
+     </xs:sequence>
+     </xs:complexType>
+  </xs:element>
+
+</xs:schema>
