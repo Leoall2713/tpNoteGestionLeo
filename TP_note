@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bdd>
+      <employes>
+          <employe>
+              <id>1</id>
+              <nom>All</nom>
+              <prenom>Le</prenom>
+              <age>23</age>
+              <poste>pilote</poste>
+          </employe>
+          <employe>
+              <id>2</id>
+              <nom>Gi</nom>
+              <prenom>Ra</prenom>
+              <age>35</age>
+              <poste>co-pilote</poste>
+          </employe>
+          <employe>
+              <id>3</id>
+              <nom>Cam</nom>
+              <prenom>Ju</prenom>
+              <age>41</age>
+              <poste>stewart</poste>
+          </employe>
+      </employes>
+      <pistes>
+          <piste>
+              <numero>1</numero>
+          </piste>
+          <piste>
+              <numero>2</numero>
+          </piste>
+      </pistes>
+      <compagniesAeriennes>
+          <compagnieAerienne>
+              <id>1</id>
+              <nom>Air Corsica</nom>
+          </compagnieAerienne>
+          <compagnieAerienne>
+              <id>2</id>
+              <nom>Air France</nom>
+          </compagnieAerienne>
+      </compagniesAeriennes>
+      <avions>
+          <avion>
+              <id_avion>1</id_avion>
+              <modele>boeing</modele>
+              <nb_passage>700</nb_passage>
+              <id-compagnie>2</id-compagnie>
+          </avion>
+          <avion>
+              <id-avion>2</id-avion>
+              <modele>Airbus</modele>
+              <nb-passage>500</nb-passage>
+              <id-compagnie>1</id-compagnie>
+          </avion>
+      </avions>
+      <vols>
+          <vol>
+              <numero>7345</numero>
+              <id-avion>2</id-avion>
+              <numero-piste>2</numero-piste>
+              <date-depart>27/04/25</date-depart>
+              <date-arrive>27/04/25</date-arrive>
+              <heure-depart>12h56</heure-depart>
+              <heure-arrive>13h54</heure-arrive>
+              <aeroport-arrive>Marignane</aeroport-arrive>
+          </vol>
+          <vol>
+              <numero>5782</numero>
+              <id-avion>1</id-avion>
+              <numero-piste>2</numero-piste>
+              <date-depart>29/04/25</date-depart>
+              <date-arrive>30/04/25</date-arrive>
+              <heure-depart>18h56</heure-depart>
+              <heure-arrive>10h38</heure-arrive>
+              <aeroport-arrive>Kuala Lumpur</aeroport-arrive>
+          </vol>
+      </vols>
+
+</bdd>
